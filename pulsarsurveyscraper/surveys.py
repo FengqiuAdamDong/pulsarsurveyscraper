@@ -11,7 +11,7 @@ Includes:
 """
 
 # update this as needed
-ATNF_version = "2.1.0"
+ATNF_version = "2.6.0"
 Surveys = {
     "ATNF": {
         "url": "https://www.atnf.csiro.au/research/pulsar/psrcat/proc_form.php?version={}&Name=Name&RaJ=RaJ&DecJ=DecJ&P0=P0&DM=DM&startUserDefined=true&c1_val=&c2_val=&c3_val=&c4_val=&sort_attr=jname&sort_order=asc&condition=&pulsar_names=&ephemeris=short&coords_unit=raj%2Fdecj&radius=&coords_1=&coords_2=&style=Short+without+errors&no_value=*&fsize=3&x_axis=&x_scale=linear&y_axis=&y_scale=linear&state=query&table_bottom.x=51&table_bottom.y=23".format(
@@ -21,7 +21,7 @@ Surveys = {
         "period_units": "s",
     },
     "GalacticMSPs": {
-        "url": "http://astro.phys.wvu.edu/GalacticMSPs/GalacticMSPs.txt",
+        "url": "http://astro.umd.edu/~eferrara/pulsars/GalacticMSPs.txt",
         "type": "ASCII",
         "pulsar_column": 0,
         "period_column": 1,
@@ -170,6 +170,7 @@ Surveys = {
         "DM_column": 2,
         "start_row": 1,
         "period_units": "ms",
+        "table_index": 1,
     },
     "TRAPUM": {
         "url": "http://www.trapum.org/discoveries/api/",
@@ -210,7 +211,7 @@ Surveys = {
         "start_row": 1,
     },
     "PKS70": {
-        "url": "http://venus.fandm.edu/~pulsar/pks70/discoveries_table.html",
+        "url": "https://froneycrawford.github.io/pulsar/pks70/discoveries_table.html",
         "type": "HTML",
         "pulsar_column": 0,
         "ra_column": 1,
@@ -239,5 +240,35 @@ Surveys = {
         "DM_column": 3,
         "period_units": "ms",
         "start_row": 1,
+    },
+    "SSP": {
+        "url": "https://dlakaplan.github.io/steepspectrum.html",
+        "type": "HTML",
+        "pulsar_column": 0,
+        "period_column": 1,
+        "DM_column": 2,
+        "period_units": "ms",
+        "start_row": 1,
+    },
+    "MGBS": {
+        "url": "https://prajwalvp.github.io/mgbs/",
+        "type": "HTML",
+        "pulsar_column": 0,
+        "period_column": 1,
+        "DM_column": 2,
+        "period_units": "ms",
+        "start_row": 1,
+    },
+    "Puschino": {
+        "url": "https://bsa-analytics.prao.ru/en/pulsars/new/",
+        "type": "HTML",
+        "pulsar_column": 1,
+        "ra_column": 2,
+        "dec_column": 3,
+        "period_column": 4,
+        "DM_column": 5,
+        "period_units": "s",
+        "start_row": 1,
+        "table_index": 2,
     },
 }
